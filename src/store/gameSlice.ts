@@ -10,12 +10,9 @@ export interface GameSlice {
   resume: () => void;
 }
 
-export const createGameSlice: StateCreator<
-  GameSlice,
-  [],
-  [],
-  GameSlice
-> = (set) => ({
+export const createGameSlice: StateCreator<GameSlice, [], [], GameSlice> = (
+  set,
+) => ({
   status: "intro",
   isMobile: "ontouchstart" in window || navigator.maxTouchPoints > 0,
   start: () => set(() => ({ status: "playing" })),

@@ -4,7 +4,7 @@ import { SplatMesh } from "@sparkjsdev/spark";
 export const Splat = () => {
   const splat = useMemo(() => {
     const splatMesh = new SplatMesh({
-      url: "PUT_URL_HERE",
+      url: "/still-life.sog",
     });
     return splatMesh;
   }, []);

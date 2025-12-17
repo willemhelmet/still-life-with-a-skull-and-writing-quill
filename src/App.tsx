@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import { Loader, Stats } from "@react-three/drei";
+import { Loader } from "@react-three/drei";
 import { Scene } from "./Scene.tsx";
 import { PlayButton } from "./components/PlayButton.tsx";
 import { useMyStore } from "./store/store.ts";
